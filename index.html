@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--font awesome-->
+    <!--    <link rel="stylesheet" href="./vendors/all.css">-->
+    <!--main css-->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<!--Section Budget-->
+<section class="section-budget">
+    <div class="container">
+        <div class="money-display row">
+            <div class="money-card budget">
+                <h3 class="heading-tertiary">Budget</h3>
+                <i class="money-card__icon money-card__icon--blue fa fa-money-check"></i>
+                <div class="money-card__sum">$0</div>
+            </div>
+            <div class="money-card expense">
+                <h3 class="heading-tertiary">Expenses</h3>
+                <i class="money-card__icon money-card__icon--red fa fa-exchange-alt"></i>
+                <div class="money-card__sum">$0</div>
+            </div>
+            <div class="money-card balance">
+                <h3 class="heading-tertiary">Balance</h3>
+                <i class="money-card__icon money-card__icon--green fa fa-dollar-sign"></i>
+                <div class="money-card__sum">$0</div>
+            </div>
+        </div>
+        <div class="error-box"></div>
+        <form class="main-form margin-auto text-center">
+            <div class="field-wrapper">
+                <label for="type"></label>
+                <select name="type" id="type" class="main-form__input">
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                </select>
+            </div>
+            <div class="field-wrapper">
+                <label for="description"></label>
+                <input type="text" id="description" class="main-form__input" name="description"
+                       placeholder="Add description">
+            </div>
+            <div class="field-wrapper">
+                <label for="value"></label>
+                <input type="text" id="value" class="main-form__input" name="value" placeholder="Add value">
+            </div>
+            <input type="submit" class="cta cta-add-budget-info" name="submit" value="Add">
+        </form>
+    </div>
+</section>
+<!--End of Section Budget-->
+<!--Section Incomes & Expenses-->
+<section class="section-incomes-and-expenses">
+    <div class="container">
+        <div class="row">
+            <div class="output output--incomes">
+                <h3 class="heading-tertiary text-center">INCOMES</h3>
+                <ul class="incomes-and-expenses"></ul>
+            </div>
+            <div class="output output--expenses">
+                <h3 class="heading-tertiary text-center">EXPENSES</h3>
+                <ul class="incomes-and-expenses"></ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End of Section Incomes & Expenses-->
+
+<footer class="footer">
+     Copyright &copy; by Embetsa 2020
+</footer>
+
+<!--font awesome-->
+<script src="./vendors/all.js"></script>
+
+<!--main.js-->
+<script src="./js/index.js" type="module"></script>
+</body>
+</html>

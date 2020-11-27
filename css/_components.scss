@@ -1,0 +1,132 @@
+// _COMPONENTS
+.container { //Задължително контейнер за центриране и задаване на max-width на съдържанието във всяка една секция
+  max-width: 110rem;
+  margin: 0 auto;
+  //border: 1px solid;
+}
+
+.section-app {
+  flex: 1;
+}
+
+.section-budget {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .1)), url("../img/bg1.jpg");
+  padding-bottom: 3rem;
+}
+
+.money-display {
+  justify-content: space-around;
+}
+
+.money-card {
+  padding: 3rem 0;
+  text-align: center;
+
+  &__icon {
+    margin-bottom: 1rem;
+
+    &--blue {
+      color: #0090ff;
+    }
+
+    &--red {
+      color: indianred;
+    }
+
+    &--green {
+      color: #3b893b;
+    }
+  }
+
+  &__sum {
+
+  }
+}
+
+.error-box {
+  width: max-content;
+
+  &--style {
+    padding: 1rem;
+    background-color: indianred;
+    margin: 0 auto 1.5rem auto;
+    border-radius: 0.2rem;
+  }
+}
+
+/*Main form*/
+.main-form {
+  width: 70%;
+
+  &__input {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+  }
+}
+
+/* section-incomes-and-expenses */
+.section-incomes-and-expenses {
+  flex-grow: 1;
+  background: linear-gradient(to right, #0090ff, indianred);
+  color: white;
+}
+
+.output {
+  flex: 1 0 30rem;
+  padding: 3rem;
+}
+
+.incomes-and-expenses {
+
+  &__item {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 1rem;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-radius: 0.4rem;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__description {
+
+  }
+
+  &__sum {
+    margin-left: auto;
+  }
+
+  &__icon {
+    margin-left: 3rem;
+    cursor: pointer;
+    color: darkorchid;
+  }
+}
+
+/* _BUTTONS */
+.cta {
+  display: inline-block;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 1rem 2rem;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  background-color: crimson;
+}
+
+.cta-add-budget-info {
+  width: 22%;
+  border-radius: 10rem;
+}
+
+.footer {
+  padding: 2rem 0;
+  background-color: dimgrey;
+  text-align: center;
+  color: whitesmoke;
+}

@@ -1,0 +1,33 @@
+// _VARIABLES
+$primary_black: #444;
+$primary_white: #fff;
+
+// _BASE
+//reset CSS
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: Lato, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  color: #444444;
+  font-size: 2rem;
+  min-height: 100vh;
+  background-color: cornflowerblue;
+}
+
+a {
+  text-decoration: none;
+}
+
